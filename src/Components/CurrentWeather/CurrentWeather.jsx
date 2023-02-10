@@ -1,10 +1,9 @@
 import React from "react";
 import SearchBar from "../SearchBar/SearchBar";
 import classes from "./CurrentWeather.module.css";
-import { city, temprature, day, weather } from "../../Data/CurrentWeatherData";
 
 
-function CurrentWeather() {
+function CurrentWeather({ city, temprature, day, weather }) {
 
 
     return <>

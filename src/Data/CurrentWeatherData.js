@@ -1,5 +1,5 @@
 
-export const city = "Karachi";
-export const temprature = '33';
-export const day = 'Thurs';
-export const weather = 'Sunny';
+export const currCity = "Karachi";
+export const currTemprature = '33';
+export const currDay = 'Thurs';
+export const currWeather = 'Sunny';

@@ -14,17 +14,21 @@
     max-width: 100px;
     padding: 1.2em;
 }
+
 .temprature {
     font-size: 2rem;
 }
-.weather{
+
+.weather {
     font-size: 1.2rem;
 }
+
 @media (max-width: 1200px) {
     .dayweather {
         flex-direction: column;
         flex-wrap: wrap;
     }
+
     .perdayweather {
         flex-direction: row;
         max-width: 100%;
@@ -32,4 +36,3 @@
         gap: 1.2em;
     }
 }
-    

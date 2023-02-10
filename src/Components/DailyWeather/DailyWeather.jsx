@@ -1,9 +1,8 @@
 import React from 'react';
 import classes from './DailyWeather.module.css';
-import { temprature, days, weather } from '../../Data/DailyWeatherData';
 
-function DailyWeather() {
-    console.log(temprature);
+function DailyWeather({temprature, days, weather}) {
+
     return <>
         <div className={classes.dailyWeather}>
             <div className={classes.dayweather}>

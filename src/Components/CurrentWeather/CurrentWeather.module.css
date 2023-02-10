@@ -1,4 +1,4 @@
-.currWeatherContainer{
+.currWeatherContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -7,14 +7,14 @@
 }
 
 
-.temprature{
+.temprature {
     font-size: 4rem;
     font-weight: 600;
-    
+
 }
 
-@media (max-width: 768px){
-    .currWeatherContainer{
+@media (max-width: 768px) {
+    .currWeatherContainer {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;

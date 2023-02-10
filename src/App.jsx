@@ -1,15 +1,27 @@
 import './App.css'
-import CurrentWeather from './components/CurrentWeather/CurrentWeather'
-import DailyWeather from './components/DailyWeather/DailyWeather'
-import Navbar from './components/Navbar/Navbar'
+import CurrentWeather from './Components/CurrentWeather/CurrentWeather'
+import DailyWeather from './Components/DailyWeather/DailyWeather'
+import CommonName from './Components/CommonName/CommonName'
+import { temprature, days, weather } from './Data/DailyWeatherData';
+import { currCity, currTemprature, currDay, currWeather } from "./Data/CurrentWeatherData";
+
 
 function App() {
 
     return <>
-        <Navbar />
+        <CommonName />
         <div className='app'>
-            <CurrentWeather />
-            <DailyWeather />
+            <CurrentWeather 
+            city={currCity}
+            temprature={currTemprature}
+            day={currDay}
+            weather={currWeather}
+            />
+            <DailyWeather
+                temprature={temprature}
+                days={days}
+                weather={weather}
+            />
         </div>
     </>
 }

@@ -1,7 +1,7 @@
 import React from "react";
-import classes from "./Navbar.module.css";
+import classes from "./CommonName.module.css";
 
-function Navbar() {
+function CommonName() {
 
     return <>
         <div className={classes.title}>
@@ -14,4 +14,4 @@ function Navbar() {
     </>
 }
 
-export default Navbar
+export default CommonName
