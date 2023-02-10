@@ -1,0 +1,16 @@
+.currWeatherContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    padding: 3em 5em;
+}
+.weather{
+
+}
+
+.temprature{
+    font-size: 4rem;
+    font-weight: 600;
+    
+}
