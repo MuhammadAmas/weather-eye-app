@@ -14,3 +14,20 @@
     max-width: 100px;
     padding: 1.2em;
 }
+.temprature {
+    font-size: 2rem;
+}
+
+@media (max-width: 1200px) {
+    .dayweather {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .perdayweather {
+        flex-direction: row;
+        max-width: 100%;
+        flex-wrap: wrap;
+        gap: 1.2em;
+    }
+}
+    

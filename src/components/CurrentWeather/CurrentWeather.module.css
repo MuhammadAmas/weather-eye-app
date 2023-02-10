@@ -3,14 +3,20 @@
     flex-direction: row;
     justify-content: space-between;
     width: 85%;
-    padding: 3em 5em;
+    padding: .5em 5em;
 }
-.weather{
 
-}
 
 .temprature{
     font-size: 4rem;
     font-weight: 600;
     
+}
+
+@media (max-width: 768px){
+    .currWeatherContainer{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
 }
