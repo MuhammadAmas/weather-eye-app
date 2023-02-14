@@ -1,26 +1,25 @@
 import './App.css'
+import Header from './Components/Header/Header'
 import CurrentWeather from './Components/CurrentWeather/CurrentWeather'
 import DailyWeather from './Components/DailyWeather/DailyWeather'
-import CommonName from './Components/Header/Header'
-import { temprature, days, weather } from './Data/DailyWeatherData';
-import { currCity, currTemprature, currDay, currWeather } from "./Data/CurrentWeatherData";
-
+import weather from './Data/CurrentWeatherData';
+import dailyWeather from './Data/DailyWeatherData';
 
 function App() {
 
     return <>
-        <CommonName />
+        <Header />
         <div className='app'>
-            <CurrentWeather 
-            city={currCity}
-            temprature={currTemprature}
-            day={currDay}
-            weather={currWeather}
+            <CurrentWeather
+                city={weather.city}
+                temprature={weather.temprature}
+                day={weather.day}
+                weatherCondition={weather.weatherCondition}
             />
             <DailyWeather
-                temprature={temprature}
-                days={days}
-                weather={weather}
+                temprature={dailyWeather.temprature}
+                day={dailyWeather.day}
+                weather={dailyWeather.weatherCondition}
             />
         </div>
     </>

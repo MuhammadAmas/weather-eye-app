@@ -2,9 +2,7 @@ import React from "react";
 import SearchBar from "../SearchBar/SearchBar";
 import classes from "./CurrentWeather.module.css";
 
-
-function CurrentWeather({ city, temprature, day, weather }) {
-
+function CurrentWeather({ city, temprature, day, weatherCondition }) {
 
     return <>
         <div className={classes.currWeatherContainer}>
@@ -22,14 +20,14 @@ function CurrentWeather({ city, temprature, day, weather }) {
                     <h2>{day}</h2>
                 </div>
                 <div className={classes.weather}>
-                    <h3>{weather}</h3>
+                    <h3>{weatherCondition}</h3>
                 </div>
 
             </div>
 
 
             <div className={classes.SearchBar}>
-                <SearchBar />
+                <SearchBar input_field_name={'Search City'} />
             </div>
 
         </div>

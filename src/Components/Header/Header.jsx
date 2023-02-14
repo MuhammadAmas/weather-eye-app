@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Header.module.css";
 
-function CommonName() {
+function Header() {
 
     return <>
         <div className={classes.title}>
@@ -9,9 +9,7 @@ function CommonName() {
                 WEATHER EYE
             </h1>
         </div>
-
-
     </>
 }
 
-export default CommonName
+export default Header
