@@ -1,7 +1,7 @@
 import './App.css'
 import CurrentWeather from './Components/CurrentWeather/CurrentWeather'
 import DailyWeather from './Components/DailyWeather/DailyWeather'
-import CommonName from './Components/CommonName/CommonName'
+import CommonName from './Components/Header/Header'
 import { temprature, days, weather } from './Data/DailyWeatherData';
 import { currCity, currTemprature, currDay, currWeather } from "./Data/CurrentWeatherData";
 
