@@ -25,11 +25,6 @@ function CurrentWeather({ city, temprature, day, weatherCondition }) {
 
             </div>
 
-
-            <div className={classes.SearchBar}>
-                <SearchBar input_field_name={'Search City'} />
-            </div>
-
         </div>
 
     </>

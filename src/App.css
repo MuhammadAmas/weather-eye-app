@@ -14,3 +14,19 @@
     align-items: center;
     gap: 2rem;
 }
+
+.curr-weather-search-bar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 85%;
+    padding: .5em 5em;
+}
+
+@media (max-width: 768px) {
+    .curr-weather-search-bar-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+}
